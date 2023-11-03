@@ -18,6 +18,7 @@ ParseTree* CompilerParser::compileProgram() {
     classTree->addChild(mustBe("identifier", ""));
     classTree->addChild(mustBe("symbol", "{"));
     classTree->addChild(mustBe("symbol", "}"));
+    return classTree;
 }
 
 /**

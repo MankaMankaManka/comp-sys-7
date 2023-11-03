@@ -14,10 +14,10 @@ CompilerParser::CompilerParser(std::list<Token*> tokens) {
  */
 ParseTree* CompilerParser::compileProgram() {
     list<Token> tokens;
-    tokens.push_back(new Token("keyword", "static");
-tokens.push_back(new Token("keyword", "int");
-tokens.push_back(new Token("identifier", "a");
-tokens.push_back(new Token("symbol", ";");
+    tokens.push_back(new Token("keyword", "class"));
+    tokens.push_back(new Token("identifier", "main"));
+    tokens.push_back(new Token("symbol", "{"));
+    tokens.push_back(new Token("symbol", "}"));
     return NULL;
 }
 
@@ -25,13 +25,7 @@ tokens.push_back(new Token("symbol", ";");
  * Generates a parse tree for a single class
  * @return a ParseTree
  */
-ParseTree* CompilerParser::compileClass() {
-    list<Token> tokens;
-    tokens.push_back(new Token("keyword", "class"));
-    tokens.push_back(new Token("identifier", "main"));
-    tokens.push_back(new Token("symbol", "{"));
-    tokens.push_back(new Token("symbol", "}"));
-    
+ParseTree* CompilerParser::compileClass() {    
     return NULL;
 }
 

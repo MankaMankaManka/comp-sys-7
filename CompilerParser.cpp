@@ -13,6 +13,11 @@ CompilerParser::CompilerParser(std::list<Token*> tokens) {
  * @return a ParseTree
  */
 ParseTree* CompilerParser::compileProgram() {
+    list<Token> tokens;
+    tokens.push_back(new Token("keyword", "static");
+tokens.push_back(new Token("keyword", "int");
+tokens.push_back(new Token("identifier", "a");
+tokens.push_back(new Token("symbol", ";");
     return NULL;
 }
 

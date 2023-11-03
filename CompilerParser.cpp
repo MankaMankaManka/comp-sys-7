@@ -21,7 +21,7 @@ ParseTree* CompilerParser::compileProgram() {
  * @return a ParseTree
  */
 ParseTree* CompilerParser::compileClass() {
-    list<tokens> tokens;
+    list<Token> tokens;
     tokens.push_back(new Token("keyword", "class"));
     tokens.push_back(new Token("identifier", "main"));
     tokens.push_back(new Token("symbol", "{"));
